@@ -1,6 +1,6 @@
 # Cap 02 - Detectando características de HTML5
 
-## Adentrandose
+## Adentrándose
 
 Dado que HTML5 no es solo una cosa, sino una colección de características individuales, no es posible "detectar soporte para HTML5" pero sí que se puede detectar soporte para características individuales.
 
