@@ -332,7 +332,7 @@ Modernizr no soporta la revisión del soporte para el API microdata.
 
 ## API del historial
 
-El _API del historial HTML5_ es un método para manipular el historial del navegadr con scripts.
+El _API del historial HTML5_ es un método para manipular el historial del navegador con scripts.
 
 Habrá una función `pushState()` en el objeto global `history` si el navegador soporta esta característica, de lo contrario la función será indefinida.
 
