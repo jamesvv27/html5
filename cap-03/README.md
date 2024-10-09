@@ -41,14 +41,18 @@ La etiqueta `<head>` es por lo general, el primer elemento hijo de `<html>`. Est
     <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
      <title>My Weblog</title>
-     <link rel="stylesheet" type="text/css" href="style-original.css" />
-     <link rel="alternate" type="application/atom+xml"
+     <link rel="stylesheet" 
+                        type="text/css" 
+                        href="style-original.css" />
+     <link rel="alternate" 
+                        type="application/atom+xml"
                         title="My Weblog feed"
                         href="/feed/" />
      <link rel="search" type="application/opensearchdescription+xml"
                         title="My Weblog search"
                         href="opensearch.xml"  />
-     <link rel="shortcut icon" href="/favicon.ico" />
+     <link rel="shortcut icon" 
+                        href="/favicon.ico" />
     </head>
 
 ## Codificación de carácteres
@@ -84,7 +88,9 @@ Por lo general las relaciones de links se visualizan en la cabeza `<head>` de un
 
 En la página de ejemplo esta es la primer relación de link:
 
-    <link rel="stylesheet" href="style-original.css" type="text/css" />
+    <link rel="stylesheet" 
+                    href="style-original.css" 
+                    type="text/css" />
 
 `rel="stylesheet"` se define para apuntar a una hoja de estilo CSS almacenada en otro archivo. El atributo `type` puede ser omitido, pues por defecto el atributo type está asignado a CSS.
 
@@ -146,18 +152,20 @@ Todos los navegadores cuentan con una lista maestra de elementos HTML que soport
 Esto suele producir problemas, pero se puede arreglar creando elementos `<article>` de prueba con JavaScript.
 
     <html>
-    <head>
-    <style>
-     article { display: block; border: 1px solid red }
-    </style>
-    <script>document.createElement("article");</script>
-    </head>
-    <body>
-    <article>
-    <h1>Welcome to Initech</h1>
-    <p>This is your <span>first day</span>.</p>
-    </article>
-    </body>
+        <head>
+            <style>
+                 article { display: block; border: 1px solid red }
+            </style>
+            <script>
+                document.createElement("article");
+            </script>
+        </head>
+        <body>
+            <article>
+                <h1>Welcome to Initech</h1>
+                <p>This is your <span>first day</span>.</p>
+            </article>
+        </body>
     </html>
 
 ## Headers
