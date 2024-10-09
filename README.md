@@ -1,6 +1,6 @@
 # Curso de HTML5
 
-Este es un resumen del libro **Adentrandose a HTML5** por Mark Pilgrim
+Este es un resumen del libro **Adentrándose a HTML5** por Mark Pilgrim
 
 En este curso se verán fundamentos de HTML5 así como una breve historia y sus funcionalidades.
 
