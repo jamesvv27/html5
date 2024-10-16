@@ -99,16 +99,16 @@ Empezaremos dibujando la cuadrícula en blanco.
 
 Estos fueron los métodos "pencil", usaremos un método "ink" para hacerlo permanente.
 
-    context.strokeStyle = "#eee";
-    context.stroke();
+    	context.strokeStyle = "#eee";
+    	context.stroke();
 
 `stroke()` es uno de los métodos "ink", este toma los path definidos con los métodos `moveTo()` y `lineTo()` y lo dibuja.
 
 Empezaremos por dibjar una flecha horizontal de color negro. Las líneas y curvas en un path se dibujan de un mismo color o gradiente.
 
-    context.beginPath();
-    context.moveto(0, 40);
-    context.lineTo(240, 40);
+    	context.beginPath();
+    	context.moveto(0, 40);
+    	context.lineTo(240, 40);
 	context.moveTo(260, 40);
 	context.lineTo(500, 40);
 	context.moveTo(495, 35);
@@ -117,7 +117,7 @@ Empezaremos por dibjar una flecha horizontal de color negro. Las líneas y curva
 
 Ahora bien, dado que la flecha vertical es del mismo color que la flecha horizontal, no se necesita hacer un nuevo path, las dos flechas serán parte de este path.
 
-    context.moveTo(60, 0);
+    	context.moveTo(60, 0);
 	context.lineTo(60, 153);
 	context.moveTo(60, 173);
 	context.lineTo(60, 375);
@@ -237,7 +237,7 @@ Para usar un elemento `<img>`, se le puede dibujar con el evento `window.onload`
   			var context = canvas.getContext("2d");
   			var cat = document.getElementById("cat");
   			context.drawImage(cat, 0, 0);
-	};
+		};
 	</script>
 
 Para crear el objeto de la imagen en JavaScript, se puede dibujar con el evento `Image.onload`.
@@ -248,8 +248,9 @@ Para crear el objeto de la imagen en JavaScript, se puede dibujar con el evento 
   		var context = canvas.getContext("2d");
   		var cat = new Image();
   		cat.src = "images/cat.png";
+    
   		cat.onload = function() {
-    		context.drawImage(cat, 0, 0);
+    			context.drawImage(cat, 0, 0);
   		};
 	</script>
 
