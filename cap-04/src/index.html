@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Canvas</title>
+        <meta charset="utf-8" />
+        <script defer>
+            
+            function get_a(){
+                var a_canvas = document.getElementById("a");
+            }
+            
+            function draw_b(){
+                var b_canvas = document.getElementById("b");
+                var b_context = b_canvas.getContext("2d");
+                b_context.fillRect(50, 25, 150, 100)
+            }
+            
+            var context = 0;
+            
+            function get_c(){
+                var c_canvas = document.getElementById("c");
+                context = c_canvas.getContext("2d");
+            }
+            
+            function get_c1(){
+                var d_canvas = document.getElementById("c1");
+                context = d_canvas.getContext("2d");
+            }
+            
+            function get_d(){
+                var d_canvas = document.getElementById("d");
+                context = d_canvas.getContext("2d");
+            }
+            
+            function get_e(){
+                var e_canvas = document.getElementById("e");
+                context = e_canvas.getContext("2d");
+            }
+            
+            function draw_path(){
+                for(var x = 0.5; x<500; x += 10){
+                    context.moveTo(x, 0);
+                    context.lineTo(x, 375);
+                }
+                
+                for(var y = 0.5; y<500; y += 10){
+                    context.moveTo(0, y);
+                    context.lineTo(500, y);
+                }
+                
+                context.strokeStyle = "#eee";
+                context.stroke();
+                
+                //Como no tienen un patron para ponerlos en un for, los escribimos uno por uno
+                context.beginPath();
+                context.moveTo(0, 40);
+                context.lineTo(240, 40);
+                context.moveTo(260, 40);
+                context.lineTo(500, 40);
+                context.moveTo(495, 35);
+                context.lineTo(500, 40);
+                context.lineTo(495, 45);
+                
+                context.moveTo(60, 0);
+                context.lineTo(60, 153);
+                context.moveTo(60, 173);
+                context.lineTo(60, 375);
+                context.moveTo(65, 370);
+                context.lineTo(60, 375);
+                context.lineTo(55, 370);
+                
+                context.strokeStyle = "#000";
+                context.stroke();
+            }
+            
+            function draw_text(){
+                //Dibujar x e y entre las flechas
+                context.font = "bold 12px sans-serif";
+                context.fillText("x", 248, 43);
+                context.fillText("y", 58,  165);
+                
+                context.textBaseline = "top";
+                context.fillText("( 0, 0 )", 8, 5);
+                
+                context.textAlign = "right";
+                context.textBaseline = "bottom";
+                context.fillText("( 500 , 375 )", 490, 372);
+                
+                //Dibujando puntos
+                context.fillRect(0, 0, 3, 3);
+                context.fillRect(497, 372, 3, 3);
+            }
+            
+            function draw_gradient(){
+                //Dibujar el gradiente en diagonal
+                var my_gradient = context.createLinearGradient(0, 0, 300, 225);
+                my_gradient.addColorStop(0, "black");
+                my_gradient.addColorStop(1, "white");
+                context.fillStyle = my_gradient;
+                context.fillRect(0, 0, 300, 225);
+            }
+            
+            function draw_images(){
+                var cat = new Image();
+                cat.src = "../images/cat.png";
+                cat.onload = function(){
+                    for (var x = 0, y = 0;
+                         x < 500 && y < 375;
+                         x += 50, y += 37) { //Por cada que las coordenadas de 'x 'suban en 50 y las de y en 37...
+                    context.drawImage(cat, x, y, 88, 56); //Dibuja un gatito :D
+                    }
+                };
+            }
+        </script>
+        <style defer>
+            canvas{
+                border: 1px dotted;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Canvas</h1>
+        
+        <h4>Haz click en los canvas para ver sus contenidos</h4>
+        
+        <h2 id = "canvas-a">Canvas a - Vacío</h2>
+        
+        <h5>Se le agregó un contorno para que sus dimensiones sean visibles</h5>
+        
+        <canvas id="a" width="300" height="225"></canvas>
+        
+        <h2 id = "canvas-b">Canvas b - Formas</h2>
+        
+        <canvas id="b" onclick="draw_b()" width="300" height="225"></canvas>
+        
+        <h2 id = "canvas-c">Canvas c - Paths</h2>
+        
+        <canvas id="c" onclick="get_c(); draw_path()" width="500" height="375"></canvas>
+        
+        <h3 id = "canvas-c1">Canvas c con textos</h3>
+        
+        <canvas id="c1" onclick="get_c1(); draw_path(); draw_text()" width="500" height="375"></canvas>
+        
+        <h2 id = "canvas-d">Canvas d - Gradiente</h2>
+        
+        <canvas id="d" onclick="get_d(); draw_gradient()" width="300" height="225"></canvas>
+        
+        <h2 id = "canvas-e">Canvas e - Imágenes</h2>
+        
+        <canvas id="e" onclick="get_e(); draw_images()" width="500" height="375"></canvas>
+        
+    </body>
+</html>
