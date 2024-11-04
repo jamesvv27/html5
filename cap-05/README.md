@@ -90,61 +90,61 @@ Subiremos los 3 formatos y los referenciaremos en un solo elemento de `<video>`.
 
 En HTML5 utilizamos el elemento `<video>` para agregar vídeo en una página web, seguido de esto podemos agregar la fuente del vídeo ya sea como atributo dentro de la misma etiqueta:
 
-    ```html
+```html
     <video src="pr6.webm"></video>
-    ```
+```
 
 O agregando el elemento source:
 
-     ```html
+```html
      <video>
      	<source src="pr6.webm">
      </video>
-     ```
+```
 
 Posteriormente, podemos definir las dimensiones del marco del vídeo.
 
-    ```html
+```html
     <video width="320" height="240">
     	<source src="pr6.webm">
     </video>
-    ```
+```
 
 Para añadir una interfaz de controles del vídeo (como ajustar el volumen, reproducir y pausar), incluimos el atributo `controls`
 
-    ```html
+```html
     <video width="320" height="240" controls>
     	<source src="pr6.webm">
     </video>
-    ```
+```
 
 Si deseamos que el vídeo empiece a descargarse tan pronto como la página cargue, debemos agregar el atributo `preload`, esto nos puede ser útil si el propósito principal de la página es reproducir el vídeo.
 
-    ```html
+```html
     <video width="320" height="240" controls preload>
     	<source src="pr6.webm">
     </video>
-    ```
+```
 
 Si no queremos esto, podemos ajustar este atributo.
 
-    ```html
+```html
     <video width="320" height="240" controls preload="none">
     	<source src="pr6.webm">
     </video>
-    ```
+```
 
 También podemos agregar el `autoplay`, por si queremos que el vídeo además de cargarse junto con la página, se reproducirá al instante.
 
-    ```html
+```html
     <video width="320" height="240" controls autoplay>
     	<source src="pr6.webm">
     </video>
-    ```
+```
 
 A continuación agregaremos más fuentes de vídeo al elemento:
 
-    ```html
+```html
     <video width="320" height="240" controls>
     		<source 
       			src="pr6.ogv" 
@@ -162,5 +162,5 @@ A continuación agregaremos más fuentes de vídeo al elemento:
 			codecs="avc1.42E01E, mp4a.40.2"'
    		>
     </video>
-    ```
+```
     
