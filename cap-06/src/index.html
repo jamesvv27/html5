@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <title>Geolocalización</title>
+        <meta charset="utf-8">
+    </head>
+    <body onload="get_location()">    
+        <footer>
+            
+            <script src="geo_position_js.init()"></script>
+            <script src="geo.js"></script>
+                <script>
+                    
+                function get_location() {
+                    navigator.geolocation.getCurrentPosition(show_map);
+                    if (geo_position_js.init()) {
+                    geo_position_js.getCurrentPosition(geo_success, geo_error);
+                    }
+                }
+                    
+                
+                function geo_success(p) {
+                    alert("Tu latitud es: " + p.coords.latitude +
+                    ". Tu longitud es: " + p.coords.longitude);
+                }
+                
+                function geo_error() {
+                    alert("No se pudo obtener tu ubicación");
+                }
+                
+                function lookup_location() {
+                    geo_position_js.getCurrentPosition(show_map, show_map_error);
+                }
+                
+                function show_map(loc) {
+                    $("#geo-wrapper").css({'width':'320px','height':'350px'});
+                    var map = new GMap2(document.getElementById("geo-wrapper"));
+                    var center = new GLatLng(loc.coords.latitude, loc.coords.longitude);
+                    map.setCenter(center, 14);
+                    map.addControl(new GSmallMapControl());
+                    map.addControl(new GMapTypeControl());
+                    map.addOverlay(new GMarker(center, {draggable: false, title: "Te encuentras aquí"}));
+                }
+                
+                function show_map_error() {
+                    $("#live-geolocation").html('No se pudo obtener tu ubicación');
+                }
+                
+            </script>
+            
+        </footer>
+    </body>
+</html>
