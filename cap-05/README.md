@@ -105,7 +105,10 @@ O agregando el elemento source:
 Posteriormente, podemos definir las dimensiones del marco del vídeo.
 
 ```html
-    <video width="320" height="240">
+    <video
+	 width="320"
+	 height="240"
+	>
     	<source src="pr6.webm">
     </video>
 ```
@@ -113,7 +116,11 @@ Posteriormente, podemos definir las dimensiones del marco del vídeo.
 Para añadir una interfaz de controles del vídeo (como ajustar el volumen, reproducir y pausar), incluimos el atributo `controls`
 
 ```html
-    <video width="320" height="240" controls>
+    <video
+	width="320"
+	height="240"
+	controls
+	>
     	<source src="pr6.webm">
     </video>
 ```
@@ -121,7 +128,12 @@ Para añadir una interfaz de controles del vídeo (como ajustar el volumen, repr
 Si deseamos que el vídeo empiece a descargarse tan pronto como la página cargue, debemos agregar el atributo `preload`, esto nos puede ser útil si el propósito principal de la página es reproducir el vídeo.
 
 ```html
-    <video width="320" height="240" controls preload>
+    <video
+	width="320"
+	height="240"
+	controls
+	preload
+	>
     	<source src="pr6.webm">
     </video>
 ```
@@ -129,7 +141,12 @@ Si deseamos que el vídeo empiece a descargarse tan pronto como la página cargu
 Si no queremos esto, podemos ajustar este atributo.
 
 ```html
-    <video width="320" height="240" controls preload="none">
+    <video
+	width="320"
+	height="240"
+	controls
+	preload="none"
+	>
     	<source src="pr6.webm">
     </video>
 ```
@@ -137,7 +154,12 @@ Si no queremos esto, podemos ajustar este atributo.
 También podemos agregar el `autoplay`, por si queremos que el vídeo además de cargarse junto con la página, se reproducirá al instante.
 
 ```html
-    <video width="320" height="240" controls autoplay>
+    <video
+	width="320"
+	height="240"
+	controls
+	autoplay
+	>
     	<source src="pr6.webm">
     </video>
 ```
@@ -145,7 +167,11 @@ También podemos agregar el `autoplay`, por si queremos que el vídeo además de
 A continuación agregaremos más fuentes de vídeo al elemento:
 
 ```html
-    <video width="320" height="240" controls>
+    <video
+	width="320"
+	height="240"
+	controls
+	>
     		<source 
       			src="pr6.ogv" 
       			type='video/ogg;
