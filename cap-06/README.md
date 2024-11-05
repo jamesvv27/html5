@@ -172,7 +172,7 @@ Anterior a la versión 9 de Internet Explorer, el navegador no soportaba el API 
 
 `geo.js` es una librería JavaScript de código abierto. Para usarlo necesitaremos colocar 2 elementos `<script>` en la página.
 
-El primer sciprt inicializa Gears si está instalado.
+El primer script inicializa Gears si está instalado.
 
 ```html
 <!DOCTYPE html>
