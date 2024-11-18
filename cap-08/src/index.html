@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" 
+      manifest="halma.appcache"
+      >   
+<head>
+    <title>Almacenamiento</title>
+    <meta charset="utf-8">
+    <meta name="robots" 
+          content="noindex"
+          >
+    <script src="halma-localstorage.js"></script>
+</head>
+    
+    <body>
+        <h1>Juego de Halma</h1>
+        
+        <script>
+            
+            initGame(null, document.getElementById('movecount'));
+            
+        </script>
+        
+        <canvas id="halma_canvas" 
+                width="451" 
+                height="451">        
+        </canvas>
+        
+        <p id="moves">
+            Movimientos:
+            <span id="movecount">2</span>
+        </p>
+        
+        
+    </body>
+</html>
