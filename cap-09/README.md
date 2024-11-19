@@ -33,7 +33,7 @@ Para incluir texto placeholder en los formularios web podemos poner lo siguiente
 </form>
 ```
 
-Los navegadore que no soporten el atributo `placeholder` lo ignorarán.
+Los navegadores que no soporten el atributo `placeholder` lo ignorarán.
 
 ## Campos autofocus
 
