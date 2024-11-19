@@ -84,7 +84,7 @@ Los navegadores que no soporten el atributo lo ignorarán, pero si queremos que 
 </form>
 ```
 
-### Poniendo el Foco lo más antes posibles.
+### Poniendo el Foco lo más antes posible.
 
 Varias páginas web esperarán hasta que el evento `window.onload` se ejecute para ajustar el foco. Pero este evento no se ejecuta hasta que todas las imágenes terminen de cargar.
 
