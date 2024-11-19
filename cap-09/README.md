@@ -25,11 +25,11 @@ Para incluir texto placeholder en los formularios web podemos poner lo siguiente
 	<input 
 		name="q" 
 		placeholder="Search Bookmarks and History"
-		>
+	>
 	<input 
 		type="submit" 
 		value="Search"
-		>
+	>
 </form>
 ```
 
@@ -56,11 +56,11 @@ Aunque también podemos usar el atributo `autofocus` introducido por HTML5. El c
 	<input 
 		name="q" 
 		autofocus
-		>
+	>
 	<input 
 		type="submit" 
 		value="Search"
-		>
+	>
 </form>
 ```
 
@@ -71,7 +71,7 @@ Los navegadores que no soporten el atributo lo ignorarán, pero si queremos que 
   <input 
   	id="q" 
   	autofocus
-  	>
+  >
   <script>
     if (!("autofocus" in document.createElement("input"))) {
       document.getElementById("q").focus();
@@ -80,7 +80,7 @@ Los navegadores que no soporten el atributo lo ignorarán, pero si queremos que 
   <input 
   	type="submit" 
   	value="Go"
-  	>
+  >
 </form>
 ```
 
@@ -106,12 +106,13 @@ En el ejemplo anterior se coloca el script de auto-foco justo después del campo
 	<input 
 		id="q"
 		autofocus
-		>
+	>
 	<input
 		type="submit"
 		value="Go"
-		>
+	>
 </form>
+</body>
 ```
 
 El evento se ejecuta después de que el DOM haya sido cargado, y no espera hasta que las imágenes estén listas.
@@ -126,7 +127,7 @@ Un tipo de entrada introducido por HTML5 es el que está dedicado para direccion
 	<input
 		type="submit"
 		value="Go"
-		>
+	>
 </form>
 ```
 
@@ -188,7 +189,7 @@ También podemos darle la opción al usuario de ajustar valores con un Slider. P
 	max="10"
 	step="2"
 	value="6"
-	>
+>
 ```
 
 Los atributos del ejemplo funcionan de la misma manera que con el `<input type="number">`.
@@ -212,11 +213,11 @@ Si queremos colocar barras de búsqueda podemos usar lo siguiente:
 	<input
 		name="q"
 		type="search"
-		>
+	>
 	<input 
 		type="submit"
 		value="Find"
-		>
+	>
 </form>
 ```
 
@@ -249,11 +250,11 @@ Para deshabilitar la validación automática, lo que haremos será utilizar el a
 	<input 
 		type="email" 
 		id="addr"
-		>
+	>
 	<input 
 		type="submit 
 		value="Subscribe"
-		>
+	>
 </form>
 ```
 
@@ -278,11 +279,11 @@ El marcado es el siguiente:
 	<input 
 		id="q" 
 		required
-		>
+	>
 	<input 
 		type="submit" 
 		value="Search"
-		>
+	>
 </form>
 ```
 
