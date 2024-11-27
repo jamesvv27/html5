@@ -284,7 +284,7 @@ En un solo elemento encontramos 2 datos de información, lo que podemos hacer es
     	for
         <span itemprop="affiliation">
         	Google, Inc.
-        <span>
+        </span>
     </dd>
 ```
 
@@ -467,6 +467,7 @@ La información de la organización se encuentra dento del elemento `<article>`,
 	itemscope
 	itemtype="http://data-vocabulary.org/Organization"
 >
+</article>
 ```
 
 ### Vocabulario de organizaciones
