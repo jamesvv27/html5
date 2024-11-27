@@ -251,10 +251,11 @@ Ahora bien, como el `<img>` anterior es un elemento hijo del elemento `<section>
 Continuando con la página, lo siguiente que encontramos es un encabezado `<h1>` y una lista `<dl>`.
 
 ```html
-  <h1>Contact Information</h1>
-  <dl>
+<h1>Contact Information</h1>
+<dl>
     <dt>Name</dt>
     <dd>Mark Pilgrim</dd>
+</d1>
 ```
 
 No necesitamos definir las propiedades como estos elementos, lo que debemos hacer es buscar en **dónde** se encuentra la información que vamos a definir como propiedad, en este caso, lo primero que encontramos es el nombre, por lo que ahí es donde declararemos la propiedad.
@@ -317,11 +318,11 @@ Toda la información que utilizaremos se encuentra en un solo texto, lo que pode
 
 ```html
 <dt>Mailing address</dt>
-    <dd
-    	itemprop="address"
-    	itemscope
+<dd
+	itemprop="address"
+	itemscope
     	itemtype="http://data-vocabulary.org/Address"
-    >
+>
     	<span itemprop="street-address">
     		100 Main Street
     	</span><br>
@@ -337,7 +338,7 @@ Toda la información que utilizaremos se encuentra en un solo texto, lo que pode
     	<span itemprop="country-name">
     		USA
     	</span>
-    </dd>
+</dd>
 ```
 
 Lo siguiente que tenemos en esta página es la sección de URLs
@@ -346,16 +347,24 @@ Lo siguiente que tenemos en esta página es la sección de URLs
   <h1>My Digital Footprints</h1>
   <ul>
     <li>
-    	<a href="http://diveintomark.org/">weblog</a>
+    	<a href="http://diveintomark.org/">
+		weblog
+	</a>
     </li>
     <li>
-    	<a href="http://www.google.com/profiles/pilgrim">Google profile</a>
+    	<a href="http://www.google.com/profiles/pilgrim">
+		Google profile
+	</a>
     </li>
     <li>
-    	<a href="http://www.reddit.com/user/MarkPilgrim">Reddit.com profile</a>
+    	<a href="http://www.reddit.com/user/MarkPilgrim">
+		Reddit.com profile
+	</a>
     </li>
     <li>
-    	<a href="http://www.twitter.com/diveintomark">Twitter</a>
+    	<a href="http://www.twitter.com/diveintomark">
+		Twitter
+	</a>
     </li>
   </ul>
 ```
