@@ -34,7 +34,7 @@ Si todo salió correctamente, el navegador tendrá un DOM idéntico al de la pá
 
 En navegadores que no soportan esta característica, solamente se hará un recargado completo de la página.
 
-Usaremos una página de ejemplo para ver cómo funciona. [Esta página](aaa) consiste en una galería de fotos, en la que al presionar los enlaces de "Siguiente" y "Anterior" actualizarán la foto y la URL en la barra de dirección. Esto sin recargar por completo la página.
+Usaremos una página de ejemplo para ver cómo funciona. [Esta página](https://diveinto.html5doctor.com/examples/history/fer.html) consiste en una galería de fotos, en la que al presionar los enlaces de "Siguiente" y "Anterior" actualizarán la foto y la URL en la barra de dirección. Esto sin recargar por completo la página.
 
 ```html
 <aside id="gallery">
