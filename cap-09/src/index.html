@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formularios</title>
+        <meta charset="utf-8"/>
+        <script defer src=jquery-3.7.1.min.js></script>
+        <script defer>
+            $(document).ready(function() {
+                if (!("autofocus" in document.createElement("input"))) {
+                    $("#q").focus();
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        
+        <h2>Autofoco</h2>
+        
+        <form name="f">
+            <input 
+                   id="q" 
+                   autofocus
+            >
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Texto placeholder</h2>
+        
+        <form>
+            <input
+                   name="q"
+                   placeholder="Buscar lo que tu quieras"
+            >
+            <input
+                   type="submit"
+                   value="Buscar"
+            >
+        </form>
+        
+        <h2>Direcciones de correo</h2>
+        
+        <form>
+            <input type="email">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Direcciones web</h2>
+        
+        <form>
+            <input type="url">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Números con Spinbox</h2>
+        
+        <form>
+            <input 
+                   type="number"
+                   min="0"
+                   max="10"
+                   step="2"
+                   value="6"
+            >
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Números con Sliders</h2>
+        
+        <form>
+            <input 
+                   type="range"
+                   min="0"
+                   max="10"
+                   step="2"
+                   value="6"
+            >
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Selectores de fecha</h2>
+        
+        <form>
+            <input type="date">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h3>Fecha y hora</h3>
+        
+        <form>
+            <input type="datetime">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h3>Año y mes</h3>
+        
+        <form>
+            <input type="month">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h3>Año y semana</h3>
+        
+        <form>
+            <input type="week">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h3>Hora</h3>
+        
+        <form>
+            <input type="time">
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Selector de color</h2>
+        
+        <form>
+            <input 
+                   type="color"
+            >
+            <input
+                   type="submit"
+                   value="Introducir"
+            >
+        </form>
+        
+        <h2>Campo requerido</h2>
+        
+        <form>
+            <input 
+                   type="text"
+                   required
+            >
+            <input 
+                   type="submit"
+                   value="Ir"
+            >
+        </form>
+    </body>
+</html>
