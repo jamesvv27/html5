@@ -54,11 +54,11 @@ Usaremos una página de ejemplo para ver cómo funciona. [Esta página](https://
 	</p>
 	<figure id="photo">
 		<img
+			alt="Fer"
+			height="375"
 			id="photoimg" 
 			src="gallery/1972-fer-500.jpg"
-			alt="Fer"
 			width="500"
-			height="375"
 		>
 		<figcaption>
 			Fer, 1972
